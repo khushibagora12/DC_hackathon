@@ -4,7 +4,6 @@ const seatSchema = new mongoose.Schema({
     seatId : String,
     booked : {type: Boolean, default: false},
     userId: String
-
 })
 
 const event = new mongoose.Schema({

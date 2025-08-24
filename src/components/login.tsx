@@ -4,7 +4,6 @@ import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { toast, ToastContainer } from 'react-toastify'
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Login() {
@@ -46,7 +45,7 @@ export default function Login() {
     }
     return (
         <>
-            <div className="flex justify-center items-center h-svh overflow-clip bg-linear w-full ">
+            <div className="flex justify-center items-center h-svh overflow-clip bg-linear w-full shadow-2xl">
                 <div className="flex flex-col md:flex-row items-center justify-center w-full h-[90%] m-10 bg-white rounded-2xl">
                   
                     <div className="justify-center m-auto">
@@ -71,7 +70,7 @@ export default function Login() {
                             </div>
                             <button className="mt-5 w-60 p-2 text-black bg-gray-500 font-bold rounded-xl " onClick={submitHandler}>{submit === true ? "submitting" : "SignIn"}</button>
                         </form>
-                        <div className={`mt-5  text-[#545454] text-sm`}>{"Don't have an account?"}<Link href={'/signup'} className="font-bold">SignUp</Link></div>
+                        <div className={`mt-5  text-[#545454] text-sm`}>{"Don't have an account?"}<Link href={'/'} className="font-bold">SignUp</Link></div>
                     </div>
                  
                 </div>

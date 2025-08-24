@@ -44,7 +44,7 @@ export default function SignupPage() {
     }
     return (
         <>
-            <div className="flex justify-center items-center h-svh overflow-clip bg-linear w-full ">
+            <div className="flex justify-center items-center h-svh overflow-clip bg-linear w-full shadow-2xl">
                 <div className="flex flex-col md:flex-row items-center justify-center w-full h-[90%] m-10 bg-white rounded-2xl">
                     <div className="justify-center m-auto">
                         <p className={`text-2xl font-medium text-black`}>Get Started Now</p>
