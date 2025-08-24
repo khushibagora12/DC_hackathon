@@ -18,7 +18,7 @@ export default function SignupPage() {
         if(signupData.username === '' || signupData.email === '' || signupData.password === ''){
                     toast("All fields are required")
                     return;
-                }
+        }
         setSubmit(true);
         try {
             const res = await fetch('/api/authentication/signup', {
