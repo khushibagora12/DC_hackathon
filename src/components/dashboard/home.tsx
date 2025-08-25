@@ -1,7 +1,8 @@
 'use client'
 
+import { signOut } from "next-auth/react";
 import { useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify";
 export default function DashboardHomePage() {
     const [seatId1, setSeatId1] = useState(0)
     const seats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -19,6 +20,7 @@ export default function DashboardHomePage() {
         })
         const response = await res.json();
         console.log(response)
+        toast(response.message)
     }
     return (
         <>
@@ -33,6 +35,7 @@ export default function DashboardHomePage() {
                     <button onClick={submitHandler}>book</button>
                 </li>
             </ol>
+            <button onClick={() => {signOut({callbackUrl: '/login'})}}>LogOut</button>
         </>
     )
 }

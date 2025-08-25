@@ -1,14 +1,11 @@
 import mongoose from "mongoose"
 
-const seatSchema = new mongoose.Schema({
-    seatId : String,
-    booked : {type: Boolean, default: false},
-    userId: String
-})
-
 const event = new mongoose.Schema({
     eventId : String,
-    seat : seatSchema
+    seat : [{
+        seatId : String,
+        userId : String
+    }]
 });
 
 const EventModel = mongoose.models.events || mongoose.model("events", event);

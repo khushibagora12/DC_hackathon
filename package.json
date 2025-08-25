@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "worker:sample": "dotenv -e .env.local -- npx tsx --watch src/workers/sample.worker.ts"
+    "worker": "tsx src/worker/worker.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
