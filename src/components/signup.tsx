@@ -44,9 +44,9 @@ export default function SignupPage() {
     }
     return (
         <>
-            <div className="flex justify-center items-center h-svh overflow-clip bg-linear w-full shadow-2xl">
-                <div className="flex flex-col md:flex-row items-center justify-center w-full h-[90%] m-10 bg-white rounded-2xl">
-                    <div className="justify-center m-auto">
+            <div className="flex justify-center items-center h-svh overflow-clip bg-amber-100 w-full">
+                <div className="flex flex-col md:flex-row items-center justify-center w-full h-[90%] m-10  bg-white rounded-2xl">
+                    <div className="justify-center m-auto shadow-2xl p-10 rounded-2xl ">
                         <p className={`text-2xl font-medium text-black`}>Get Started Now</p>
                         <form className="mt-5">
                             <div>
